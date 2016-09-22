@@ -1,3 +1,5 @@
+import random
+
 def partition(array, left, right):
     i = left-1
     for j in range(left, right):
@@ -13,8 +15,14 @@ def quicksort(array, left, right):
         quicksort(array, left, pivot-1)
         quicksort(array, pivot+1, right)
 
+#create random array        
+array = []
+max = 10000 
 
-array = [3, 2, 1, 0, 9, 8, 7, 6, 5, 4]
-quicksort(array, 0, 9)
+for x in range(max+1):
+    array.append(random.randint(0,max)) 
+
+#quick sort    
+quicksort(array, 0, max)
 
 print array
