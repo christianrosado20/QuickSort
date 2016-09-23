@@ -35,6 +35,7 @@ elapsed = end - start
 
 print array
 print "Time taken: ", elapsed, "seconds."
+print "-END-"
 
 
 
