@@ -1,5 +1,8 @@
 #Test command commit
 import random
+import time
+
+start = time.time()
 
 def partition(array, left, right):
     i = left-1
@@ -26,4 +29,13 @@ for x in range(max+1):
 #quick sort    
 quicksort(array, 0, max)
 
+
+end = time.time()
+elapsed = end - start
+
 print array
+print "Time taken: ", elapsed, "seconds."
+
+
+
+
